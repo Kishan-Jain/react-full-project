@@ -3,7 +3,7 @@ import Navbar from '../navbar/Navbar'
 function Header() {
   return (
     <div
-    className='bg-slate-500 text-white'
+    className=' text-slate-500'
     >
       < Navbar />
     </div>

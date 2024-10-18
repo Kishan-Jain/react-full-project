@@ -6,11 +6,14 @@ function Navbar() {
     <div
     className='flex items-center columns-3'>
       <div
-      className=''>
-        <h1 className='m-4 font-bold'>Event Management Application</h1>
+      className='w-1/3'>
+        <h1 className='m-4 pr-4 font-bold border-r-2 border-gray-600 inline'>Event Management Application</h1>
+      </div>
+      <div className='w-full'>
+
       </div>
       <div
-      className=''>
+      className='w-full flex'>
         <ul className='flex items-center'>
           <li className='m-3 '>
             <button className='rounded border-orange-300 border-2 p-2'>Home</button>
@@ -22,26 +25,23 @@ function Navbar() {
           <button className='rounded border-orange-300 border-2 p-2'>About</button> 
           </li>
         </ul>
-      </div>
-      <div
-      className=''>
-          {(!user) ?(
-            <ul className='flex items-center'>
-            <li className='m-3'>
-            <button className='rounded border-orange-300 border-2 p-2'>Login</button>
-            </li>
-            <li className='m-3'>
-            <button className='rounded border-orange-300 border-2 p-2'>Register</button>
-            </li>
-            </ul>
-          ) : <ul className='flex items-center'>
+        {(!user) ?(
+          <ul className='flex items-center'>
           <li className='m-3'>
           <button className='rounded border-orange-300 border-2 p-2'>Login</button>
           </li>
           <li className='m-3'>
           <button className='rounded border-orange-300 border-2 p-2'>Register</button>
           </li>
-          </ul>}
+          </ul>
+        ) : <ul className='flex items-center'>
+        <li className='m-3'>
+        <button className='rounded border-orange-300 border-2 p-2'>Login</button>
+        </li>
+        <li className='m-3'>
+        <button className='rounded border-orange-300 border-2 p-2'>Register</button>
+        </li>
+        </ul>}
       </div>
     </div>
   )
